@@ -1,6 +1,6 @@
 wiringPi empty project.
 
-assumes wiringPi is installed.
+assumes wiringPi is installed. should compile out of the box via the Makefile in the folder, assuming the notes below have been dealt with...
 
 notes:
 
@@ -13,4 +13,4 @@ PLATFORM_HEADER_SEARCH_PATHS += $(RPI_ROOT)/usr/local/include
   (will investigate...)
 
 
-for cross compile, make sure the built wiringPi libs are in the right system path, and headers updated on the compile host in the include directory above.
+for cross compile, make sure the built wiringPi libs are in the right system path (e.g. $(RPI_ROOT)/usr/lib or somewhere like that), and headers updated on the compile host in the include directory above.
